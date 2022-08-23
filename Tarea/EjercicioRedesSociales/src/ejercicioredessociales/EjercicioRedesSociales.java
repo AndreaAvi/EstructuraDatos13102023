@@ -32,7 +32,7 @@ public class EjercicioRedesSociales {
         String[][] valores
                 = LeerAlmacenarCSV(
                         "C:\\Users\\Andi\\Documents\\EstructuraDatos13102023\\"
-                        + "Tarea\\EjercicioRedesSociales\\presenciaredes.csv");
+                        + "Tarea\\EjercicioRedesSociales\\src\\presenciaredes.csv");
 
         //2. Mostrar en pantalla la diferencia de seguidores (followers) en Twitter 
         //   entre el mes de enero y junio.
@@ -118,7 +118,7 @@ public class EjercicioRedesSociales {
         } else {
             JOptionPane.showMessageDialog(null, "\nEn " + redSocial
                     + " la diferencia de " + concepto + " de " + mes1
-                    + " a " + mes2 + " es de: " + resultado + ".",
+                    + " a " + mes2 + " es de: " + resultado,
                     "Diferencia de " + concepto + " en " + redSocial,
                     JOptionPane.INFORMATION_MESSAGE);
         }
