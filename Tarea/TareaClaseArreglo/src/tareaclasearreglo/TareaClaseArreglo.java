@@ -17,7 +17,7 @@ public class TareaClaseArreglo {
     public static void main(String[] args) {
 
         //----------PRUEBA CON ENTEROS----------
-        Arreglo numeros = new Arreglo(-3);//<-Declaración del objeto mediante constructor.
+        Arreglo numeros = new Arreglo(5);//<-Declaración del objeto mediante constructor.
 
         //Se rellena el arreglo con los primeros 5 múltiplos de 2, con setElemento().
         for (int i = 0; i < numeros.getLongitud(); i++) {
@@ -27,8 +27,9 @@ public class TareaClaseArreglo {
         //Pruebas de métodos.
         System.out.println("Longitud: " + numeros.getLongitud());
         System.out.println("Elemento (3): " + numeros.getElemento(3));
-        numeros.limpiar(0);
         System.out.println(numeros);
+        numeros.limpiar(0);
+        System.out.println("Arreglo limpio: \n" + numeros);
 
         //----------PRUEBA CON CARACTERES----------
         Arreglo letras = new Arreglo(5);//<-Declaración del objeto mediante constructor.
@@ -41,8 +42,9 @@ public class TareaClaseArreglo {
         //Pruebas de métodos.
         System.out.println("Longitud: " + letras.getLongitud());
         System.out.println("Elemento (3): " + letras.getElemento(3));
-        letras.limpiar(null);
         System.out.println(letras);
+        letras.limpiar(null);
+        System.out.println("Arreglo limpio: \n" + letras);
 
         //----------PRUEBA CON OBJETOS(ALUMNOS)----------
         Arreglo alumnos = new Arreglo(5);//<-Declaración del objeto mediante constructor.
@@ -57,8 +59,9 @@ public class TareaClaseArreglo {
         //Pruebas de métodos.
         System.out.println("Longitud: " + alumnos.getLongitud());
         System.out.println("Elemento (3): " + alumnos.getElemento(3));
-        alumnos.limpiar(new Alumno("SIN NOMBRE", 0, "00000000"));
         System.out.println(alumnos);
+        alumnos.limpiar(new Alumno("SIN NOMBRE", 0, "00000000"));
+        System.out.println("Arreglo limpio: \n" + alumnos);
 
     }
 

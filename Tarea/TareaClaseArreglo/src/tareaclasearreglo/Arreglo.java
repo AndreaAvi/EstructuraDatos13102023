@@ -1,6 +1,6 @@
 /*
 Autora: Andrea Marcela Cáceres Avitia (Estructura de Datos 2023-I)
-Fecha de creación:  24/08/2022
+Fecha de creación:  24/08/2022 
 Propósito: Crear una clase en Java llamada Arreglo que tenga los métodos 
 solicitados.
 Tarea: Clase Arreglo
