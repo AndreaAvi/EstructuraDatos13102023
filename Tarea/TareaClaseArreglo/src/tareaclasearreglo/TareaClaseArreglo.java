@@ -17,7 +17,7 @@ public class TareaClaseArreglo {
     public static void main(String[] args) {
 
         //----------PRUEBA CON ENTEROS----------
-        Arreglo numeros = new Arreglo(5);//<-Declaración del objeto mediante constructor.
+        Arreglo numeros = new Arreglo(5);//<-Declaración mediante constructor.
 
         //Se rellena el arreglo con los primeros 5 múltiplos de 2, con setElemento().
         for (int i = 0; i < numeros.getLongitud(); i++) {
@@ -31,8 +31,9 @@ public class TareaClaseArreglo {
         numeros.limpiar(0);
         System.out.println("Arreglo limpio: \n" + numeros);
 
+        
         //----------PRUEBA CON CARACTERES----------
-        Arreglo letras = new Arreglo(5);//<-Declaración del objeto mediante constructor.
+        Arreglo letras = new Arreglo(5);//<-Declaración mediante constructor.
 
         //Se rellena el arreglo con las primeras 5 letras mayúsculas con setElemento().
         for (int i = 0; i < letras.getLongitud(); i++) {
@@ -46,8 +47,9 @@ public class TareaClaseArreglo {
         letras.limpiar(null);
         System.out.println("Arreglo limpio: \n" + letras);
 
+        
         //----------PRUEBA CON OBJETOS(ALUMNOS)----------
-        Arreglo alumnos = new Arreglo(5);//<-Declaración del objeto mediante constructor.
+        Arreglo alumnos = new Arreglo(5);//<-Declaración mediante constructor.
 
         //Se rellena el arreglo con 5 objetos alumno, con setElemento().
         alumnos.setElemento(0, new Alumno("Helena", 19, "142536"));
