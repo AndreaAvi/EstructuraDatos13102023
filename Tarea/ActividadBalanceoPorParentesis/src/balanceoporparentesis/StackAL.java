@@ -46,7 +46,7 @@ public class StackAL<T> {
         datos.add(value);
         top++;
     }
-
+    
     @Override
     public String toString() {
         String stack = "";

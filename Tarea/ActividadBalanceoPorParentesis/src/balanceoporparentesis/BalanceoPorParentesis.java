@@ -6,13 +6,40 @@ Descripción: Hacer un programa que dado una cadena de texto que contiene
 paréntesis , utilizar el algoritmo de pila vacía para verificar el correcto 
 balanceo de paréntesis para los dos archivos de texto que se anexan en la 
 actividad.
+Paréntesis: {},[],().
  */
 package balanceoporparentesis;
 
-/**
- *
- * @author Andi
- */
 public class BalanceoPorParentesis {
-    
+
+    public static boolean estaBalanceada(String texto) {
+
+        StackAL<Character> parentesis = new StackAL<>();
+
+        for (int i = 0; i < texto.length(); i++) {
+            char c = texto.charAt(i);
+            if (c == '{' || c == '[' || c == '(') {
+                parentesis.push(c);
+            }
+            if (c == '}') {
+                if (!parentesis.peek().equals('{')) {
+                    return false;
+                }
+                parentesis.pop();
+            }
+            if (c == ']') {
+                if (!parentesis.peek().equals('[')) {
+                    return false;
+                }
+                parentesis.pop();
+            }
+            if (c == ')') {
+                if (!parentesis.peek().equals('(')) {
+                    return false;
+                }
+                parentesis.pop();
+            }
+        }
+        return parentesis.isEmpty();
+    }
 }
