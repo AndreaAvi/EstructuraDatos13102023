@@ -17,7 +17,7 @@ import java.io.IOException;
 public class BalanceoPorParentesisMain {
 
     public static void main(String[] args) throws IOException {
-        
+
         String direccionTexto1 = "C:\\Users\\Andi\\Documents\\EstructuraDatos13102023\\Tarea\\ActividadBalanceoPorParentesis\\src\\texto1.txt";
         String direccionTexto2 = "C:\\Users\\Andi\\Documents\\EstructuraDatos13102023\\Tarea\\ActividadBalanceoPorParentesis\\src\\texto2.txt";
 
@@ -25,14 +25,22 @@ public class BalanceoPorParentesisMain {
         System.out.println("\n\n-----------------------Texto 1-----------------------");
         System.out.println(texto1);
         System.out.println("-------------------------------------------------------");
-        System.out.println("Los paréntesis del texto 1 están balanceados: " + BalanceoPorParentesis.estaBalanceada(texto1));
+        if (BalanceoPorParentesis.estaBalanceada(texto1)) {
+            System.out.println("Los paréntesis del texto 1 SÍ están balanceados. ");
+        } else {
+            System.out.println("Los paréntesis del texto 1 NO están balanceados. ");
+        }
 
         String texto2 = leerTxt(direccionTexto2);
         System.out.println("\n\n-----------------------Texto 2-----------------------");
         System.out.println(texto2);
         System.out.println("-------------------------------------------------------");
-        System.out.println("Los paréntesis del texto 2 están balanceados: " + BalanceoPorParentesis.estaBalanceada(texto2));
-   
+        if (BalanceoPorParentesis.estaBalanceada(texto2)) {
+            System.out.println("Los paréntesis del texto 2 SÍ están balanceados. ");
+        } else {
+            System.out.println("Los paréntesis del texto 2 NO están balanceados. ");
+        }
+
     }
 
     //Se crea un método para leer los archivos de texto, 
