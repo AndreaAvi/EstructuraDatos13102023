@@ -2,7 +2,7 @@
 Autora: Andrea Marcela Cáceres Avitia (Estructura de Datos 2023-I)
 Tarea 8: Colas de prioridad acotada
 Fecha de entrega: 22/11/2022
-Descripción: Estructura de datos Queue
+Descripción: Estructura de datos Queue. 
  */
 package tareacolasdeprioridadacotada;
 
