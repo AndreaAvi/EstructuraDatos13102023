@@ -28,7 +28,7 @@ public class BoundedPriorityQueue<T> {
     }
 
     public void enqueue(int priority, T element) {
-        if (priority > data.length) {
+        if (priority >= data.length) {
             return;
         }
         data[priority].enqueue(element);
