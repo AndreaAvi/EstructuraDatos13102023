@@ -8,7 +8,7 @@ package linkedlist;
 
 public class LinkedList<T> {
 
-   public Nodo<T> head;
+    private Nodo<T> head;
 
     public void LinkedList() {
         head = null;
@@ -16,6 +16,10 @@ public class LinkedList<T> {
 
     public void LinkedList(T val) {
         head = new Nodo(val);
+    }
+
+    public Nodo<T> getHead() {
+        return head;
     }
 
     public boolean estaVacia() {
@@ -153,6 +157,5 @@ public class LinkedList<T> {
         System.out.print(head);
         imprimir(head.getSiguiente());
     }
-    
-    
+
 }

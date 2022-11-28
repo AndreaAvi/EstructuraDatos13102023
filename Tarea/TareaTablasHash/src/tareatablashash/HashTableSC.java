@@ -47,7 +47,7 @@ public class HashTableSC<K, V> {
         if (table[index].estaVacia()) {
             return null;
         }
-        Nodo<Entry> aux = table[index].head;
+        Nodo<Entry> aux = table[index].getHead();
         while (aux != null && !aux.getDato().key.equals(key)) {
             aux = aux.getSiguiente();
         }
@@ -62,7 +62,7 @@ public class HashTableSC<K, V> {
         if (table[index].estaVacia()) {
             return null;
         }
-        Nodo<Entry> aux = table[index].head;
+        Nodo<Entry> aux = table[index].getHead();
         int auxPosicion = 0;
         while (aux != null && !aux.getDato().key.equals(key)) {
             aux = aux.getSiguiente();
@@ -87,7 +87,7 @@ public class HashTableSC<K, V> {
             if (this.table[i].estaVacia()) {
                 table += "[" + i + "]: null \n";
             } else {
-                Nodo<Entry> aux = this.table[i].head;
+                Nodo<Entry> aux = this.table[i].getHead();
                 String slot = "";
                 while (aux.getSiguiente() != null) {
                     slot += aux.getDato().value + "-->";
