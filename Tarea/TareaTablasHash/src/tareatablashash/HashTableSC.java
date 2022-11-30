@@ -33,6 +33,9 @@ public class HashTableSC<K, V> {
         }
     }
 
+    //Debido a que se están trabajando valores
+    //genéricos, la función hash empleará el método
+    //hashCode() de Java.
     private int hashFunction(K key) {
         return key.hashCode() % size;
     }
